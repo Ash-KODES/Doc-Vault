@@ -1,17 +1,8 @@
 const readline = require("readline");
 const DocumentStore = require("../models/DocumentStore.js");
 
-// create readline interface
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
-// create document store instance
-const docStore = new DocumentStore();
-
 // define searchDocuments function
-function searchDocuments() {
+function searchDocuments(docStore,rl) {
   // prompt user to enter document path prefix
   rl.question("Enter the document path prefix: ", (path) => {
     // call searchDocuments method of docStore to search for documents with the given prefix

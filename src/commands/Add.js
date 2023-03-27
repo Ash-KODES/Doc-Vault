@@ -2,14 +2,8 @@ const readline = require("readline");
 const Document = require("../models/Document.js");
 const DocumentStore = require("../models/DocumentStore.js");
 
-// Create a readline interface for taking input from the command line
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
 // Define a function for adding a new document to the store
-function addDocument(docStore) {
+function addDocument(docStore,rl) {
   // Ask the user to enter the path and text for the document
   rl.question("Enter the document path: ", (path) => {
     rl.question("Enter the document text: ", (text) => {
