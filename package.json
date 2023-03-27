@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Memory based Document Manager",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ashkodes"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
