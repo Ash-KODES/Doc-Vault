@@ -1,0 +1,15 @@
+{
+  "name": "docvault-memory-based-document-manager",
+  "version": "1.0.0",
+  "description": "Memory based Document Manager",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashutosh Kumar Choudhary",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "readline": "^1.3.0"
+  }
+}
