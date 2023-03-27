@@ -1,5 +1,5 @@
 {
-  "name": "docvault-memory-based-document-manager",
+  "name": "doc-vault",
   "version": "1.0.0",
   "description": "Memory based Document Manager",
   "main": "index.js",
