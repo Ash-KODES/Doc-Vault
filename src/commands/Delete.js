@@ -1,23 +1,18 @@
-const readline = require("readline"); // import the 'readline' module for user input
-const DocumentStore = require("../models/DocumentStore.js"); // import the DocumentStore class
+const readline = require('readline');
 
-const rl = readline.createInterface({ // create a readline interface for user input
-  input: process.stdin,
-  output: process.stdout,
-});
-
-const docStore = new DocumentStore(); // create a new DocumentStore instance
-
-function deleteDocument() { // define a function to handle the 'delete' command
-  rl.question("Enter the document path: ", (path) => { // prompt the user to enter a document path
+function deleteDocument(docStore, rl) {
+  // Ask the user to enter the path of the document to delete
+  rl.question('Enter the path of the document to delete: ', (path) => {
     try {
-      docStore.deleteDocument(path); // call the 'deleteDocument' method on the DocumentStore instance
-      console.log("Document deleted successfully.");
+      // Attempt to delete the document from the store
+      docStore.deleteDocument(path);
+      console.log('Document deleted successfully.');
     } catch (err) {
-      console.log(err.message); // log any errors that occur during the deletion process
+      // If there was an error deleting the document, log the error message
+      console.log(err.message);
     }
-    rl.prompt(); // display the readline prompt to the user for further input
+    rl.prompt();
   });
 }
 
-module.exports = deleteDocument; // export the 'deleteDocument' function for use in other modules
+module.exports = deleteDocument;

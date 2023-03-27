@@ -8,11 +8,8 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-// Create a new instance of the DocumentStore class
-const docStore = new DocumentStore();
-
 // Define a function for adding a new document to the store
-function addDocument() {
+function addDocument(docStore) {
   // Ask the user to enter the path and text for the document
   rl.question("Enter the document path: ", (path) => {
     rl.question("Enter the document text: ", (text) => {

@@ -16,7 +16,7 @@ const rl = readline.createInterface({
 });
 
 // Create a new instance of the DocumentStore
-const docStore = DocumentStore.instance;
+const docStore = new DocumentStore();
 
 // Handle user input
 rl.on('line', (input) => {
@@ -42,4 +42,6 @@ rl.on('line', (input) => {
 
 // Display a welcome message and prompt for user input
 console.log('Welcome to the document store!');
+
+// Prompt for user input
 rl.prompt();
