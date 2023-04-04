@@ -1,6 +1,8 @@
 # Doc-Vault
 A simple Document manager
 
+The project is a command-line interface (CLI) application that allows the user to create, search, and delete documents in a document store.
+
 Document.js - This file exports a Document class which is used to represent a document with a text property.
 
 
