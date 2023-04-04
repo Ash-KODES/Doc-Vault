@@ -19,6 +19,7 @@ const rl = readline.createInterface({
 const docStore = new DocumentStore();
 
 // Handle user input
+// rl.on('line', (input) => {}) is an event listener that listens for the 'line' event emitted by the readline interface rl.
 rl.on('line', (input) => {
   const command = input.trim().toLowerCase(); // Remove whitespace and convert to lowercase
   switch (command) {

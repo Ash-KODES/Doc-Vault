@@ -1,6 +1,11 @@
 const Document = require("./Document.js");
 
+/*
+Document Store is a map where path are stored as key and documents as values
+*/
+
 class DocumentStore {
+  // whenever documentstore's object is made this constructor is called and new map is created. 
   constructor() {
     // using a Map to store the documents at various paths
     this.documents = new Map();

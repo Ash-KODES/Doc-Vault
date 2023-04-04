@@ -1,5 +1,5 @@
 // Import the DocumentStore module
-const DocumentStore = require('../models/DocumentStore.js');
+const DocumentStore = require("../models/DocumentStore.js");
 
 // Function to provide autocompletion suggestions
 function completer(linePartial, callback) {
