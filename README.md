@@ -19,3 +19,9 @@ delete.js - This file exports a function that prompts the user to enter the path
 
 
 complete.js - This file exports a function that provides autocompletion suggestions for document paths based on the user input.
+
+
+- [ ]  Update README.md
+- [ ]  Write code for feature
+- [ ]  Test feature
+- [ ]  Submit pull request
